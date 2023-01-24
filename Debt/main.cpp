@@ -11,6 +11,7 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
+#include <string>
 #include "Debt.h"
 
 int main() {
@@ -36,7 +37,7 @@ int main() {
             case 1: debts.push_back(Debt::create_debt());
             break;
 
-            case 2: Debt::make_payment(debts);
+            case 2: Debt::make_payment(debts); 
             break;
 
             case 9:
