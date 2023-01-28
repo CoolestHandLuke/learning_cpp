@@ -1,0 +1,18 @@
+#include "Checking_Account.h"
+
+Checking_Account::Checking_Account(std::string name, double balance) 
+    : Account{name, balance} {
+
+    }
+bool Checking_Account::withdraw(double amount) {
+    if (balance - amount - 1.50 >= 0) {
+        balance -= 1.50;
+        return Account::withdraw(amount);
+    }
+    return false;
+}
+
+std::ostream &operator<<(std::ostream &os, const Checking_Account &account) {
+    os << "[Checking Account: " << account.name << ": $" << account.balance << "]";
+    return os;
+}
