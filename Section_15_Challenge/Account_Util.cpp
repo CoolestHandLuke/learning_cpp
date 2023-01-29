@@ -38,7 +38,7 @@ void display(const std::vector<Savings_Account> &accounts) {
 
 }
 void deposit(std::vector<Savings_Account> &accounts, double amount) {
-    std::cout<<"\nWithdrawing from Savings Accounts==================================================" << std::endl;
+    std::cout<<"\nDepositing to Savings Accounts==================================================" << std::endl;
     for (auto &acc: accounts) {
         if (acc.deposit(amount)) {
             std::cout << "Deposited "<< amount << " to " << acc << std::endl;
@@ -48,7 +48,7 @@ void deposit(std::vector<Savings_Account> &accounts, double amount) {
     }
 }
 void withdraw(std::vector<Savings_Account> &accounts, double amount) {
-    std::cout<<"\nDepositing to Savings Accounts==================================================" << std::endl;
+    std::cout<<"\nWithdrawing from Savings Accounts==================================================" << std::endl;
     for (auto &acc : accounts) {
         if(acc.withdraw(amount)) {
             std::cout << "Withdrew " << amount << " from " << acc << std::endl;
@@ -59,14 +59,14 @@ void withdraw(std::vector<Savings_Account> &accounts, double amount) {
 }
 // Checking Account class
 void display(const std::vector<Checking_Account> &accounts) {
-    std::cout<<"\nSavings Accounts==================================================" << std::endl;
+    std::cout<<"\nChecking Accounts==================================================" << std::endl;
     for (const auto &acc: accounts) {
         std::cout << acc << std::endl;
     }
 
 }
 void deposit(std::vector<Checking_Account> &accounts, double amount) {
-    std::cout<<"\nWithdrawing from Savings Accounts==================================================" << std::endl;
+    std::cout<<"\nDepositing to Checking Accounts==================================================" << std::endl;
     for (auto &acc: accounts) {
         if (acc.deposit(amount)) {
             std::cout << "Deposited "<< amount << " to " << acc << std::endl;
@@ -76,7 +76,7 @@ void deposit(std::vector<Checking_Account> &accounts, double amount) {
     }
 }
 void withdraw(std::vector<Checking_Account> &accounts, double amount) {
-    std::cout<<"\nDepositing to Savings Accounts==================================================" << std::endl;
+    std::cout<<"\nWithdrawing from Checking Accounts==================================================" << std::endl;
     for (auto &acc : accounts) {
         if(acc.withdraw(amount)) {
             std::cout << "Withdrew " << amount << " from " << acc << std::endl;
@@ -87,14 +87,14 @@ void withdraw(std::vector<Checking_Account> &accounts, double amount) {
 }
 // Trust Account class
 void display(const std::vector<Trust_Account> &accounts) {
-    std::cout<<"\nSavings Accounts==================================================" << std::endl;
+    std::cout<<"\nTrust Accounts==================================================" << std::endl;
     for (const auto &acc: accounts) {
         std::cout << acc << std::endl;
     }
 
 }
 void deposit(std::vector<Trust_Account> &accounts, double amount) {
-    std::cout<<"\nWithdrawing from Savings Accounts==================================================" << std::endl;
+    std::cout<<"\nDepositing to Trust Accounts==================================================" << std::endl;
     for (auto &acc: accounts) {
         if (acc.deposit(amount)) {
             std::cout << "Deposited "<< amount << " to " << acc << std::endl;
@@ -104,7 +104,7 @@ void deposit(std::vector<Trust_Account> &accounts, double amount) {
     }
 }
 void withdraw(std::vector<Trust_Account> &accounts, double amount) {
-    std::cout<<"\nDepositing to Savings Accounts==================================================" << std::endl;
+    std::cout<<"\nWithdrawing from Trust Accounts==================================================" << std::endl;
     for (auto &acc : accounts) {
         if(acc.withdraw(amount)) {
             std::cout << "Withdrew " << amount << " from " << acc << std::endl;
